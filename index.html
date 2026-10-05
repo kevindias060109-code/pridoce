@@ -4,13 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pri Doce&amp;ria — Bolos Artesanais</title>
-<meta name="description" content="Pri Doce&amp;ria — Bolos artesanais feitos com carinho. Confira o cardápio e faça seu pedido pelo WhatsApp.">
-<meta name="theme-color" content="#C4536B">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pri Doce&amp;ria — Bolos Artesanais">
-<meta property="og:description" content="Bolos artesanais feitos com carinho. Confira o cardápio e faça seu pedido pelo WhatsApp.">
-<meta property="og:locale" content="pt_BR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%82%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -684,6 +677,120 @@
   }
   body.showing-docinhos .view-bolos{ display:none !important; }
   body.showing-bolos .view-docinhos{ display:none !important; }
+
+  /* ===== CLEAN / PROFISSIONAL ===== */
+  :root{
+    --bg:#FBF8F4; --bg-soft:#F6F0EA; --panel:#FFFFFF; --line:#E6DDD3;
+    --wine:#2B1A1E; --wine-soft:#6F6165; --pink:#EBD3D8; --pink-deep:#9E4A5C; --pink-deeper:#7E3447;
+    --gold:#A98A4B; --gold-soft:#EFE6D3; --radius:10px;
+  }
+  body{ background:var(--bg); background-image:none; }
+  .wrap{ max-width:920px; }
+  .size-row-price,.size-row-price-old,.addon-price,.topper-price,.doce-card-price,.coupon-input,.size-row-cta,.peso-chip{ font-family:'Manrope',sans-serif; font-variant-numeric:tabular-nums; }
+  .size-row-cta{ letter-spacing:.12em; }
+
+  header.site{ padding:26px 0 18px; border-bottom:1px solid var(--line); }
+  .brand-logo{ height:64px; filter:none; }
+
+  .hero{ padding:56px 0 40px; }
+  .hero-cake{ display:none; }
+  .hero h1{ font-weight:500; font-size:clamp(2.2rem,5.6vw,3.4rem); line-height:1.12; letter-spacing:-.015em; }
+  .hero h1 em{ color:var(--pink-deep); font-weight:500; }
+  .hero p{ max-width:540px; font-size:1rem; line-height:1.7; }
+  .hero-badges{ display:flex; justify-content:center; flex-wrap:wrap; margin-top:28px; }
+  .hero-badges span{ background:none; border:0; box-shadow:none; border-radius:0; padding:0 18px; font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--wine-soft); }
+  .hero-badges span+span{ border-left:1px solid var(--line); }
+
+  .divider{ display:none; }
+
+  .view-toggle{ position:sticky; top:0; z-index:20; width:auto; max-width:none; margin:0; padding:0; gap:0; background:rgba(251,248,244,.94); backdrop-filter:blur(8px); border:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); border-radius:0; box-shadow:none; justify-content:center; }
+  .view-toggle-btn{ flex:none; max-width:none; min-width:0; background:none; border:0; border-bottom:2px solid transparent; border-radius:0; margin-bottom:-1px; padding:18px 34px; font-size:.74rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--wine-soft); box-shadow:none; }
+  .view-toggle-btn.active{ background:none; color:var(--wine); border-bottom-color:var(--wine); box-shadow:none; }
+
+  .sizeguide-section,.gallery-section,.doces-section{ padding-top:56px; padding-bottom:12px; }
+  .sizeguide-title,.gallery-title{ font-weight:500; font-size:1.9rem; letter-spacing:-.01em; }
+  .sizeguide-sub,.gallery-sub{ color:var(--wine-soft); }
+
+  .tabs{ gap:0; margin:44px 0 0; border-bottom:1px solid var(--line); }
+  .tab{ border:0; border-bottom:2px solid transparent; border-radius:0; background:none; box-shadow:none; margin-bottom:-1px; padding:14px 24px; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:var(--wine-soft); }
+  .tab:hover{ transform:none; color:var(--wine); }
+  .tab[aria-pressed="true"]{ background:none; color:var(--wine); border-bottom-color:var(--wine); }
+  .tab[aria-pressed="true"] svg{ stroke:var(--wine); }
+  .tab-hint{ margin:18px 0 0; font-size:.84rem; }
+  .tab-hint+.tab-hint{ margin:6px 0 28px; }
+
+  .panel{ box-shadow:none; border:1px solid var(--line); border-radius:var(--radius); padding:36px clamp(20px,5vw,48px) 42px; }
+  .panel-icon{ border-radius:8px; width:42px; height:42px; }
+  .panel-title{ font-weight:500; font-size:1.55rem; }
+  .section-label{ font-size:.68rem; letter-spacing:.18em; margin:34px 0 14px; }
+  .section-label::after{ content:""; flex:1; height:1px; background:var(--line); }
+  .section-label{ display:flex; align-items:center; gap:14px; }
+
+  .massa-btn{ border-radius:6px; background:#fff; border:1px solid var(--line); padding:10px 20px; }
+  .massa-btn[aria-pressed="true"]{ background:var(--wine); border-color:var(--wine); color:#fff; }
+  .sabor-card{ background:#fff; border:1px solid var(--line); border-radius:8px; box-shadow:none; padding:16px 18px; font-weight:500; transition:border-color .15s,background .15s; }
+  .sabor-card:hover{ transform:none; border-color:var(--wine); }
+  .sabor-card[aria-pressed="true"]{ background:var(--wine); border-color:var(--wine); color:#fff; }
+  .size-box,.delivery-box{ border-top:1px solid var(--line); margin-top:34px; padding-top:6px; }
+  .size-row{ border-radius:8px; border:1px solid var(--line); box-shadow:none; padding:16px 20px; }
+  .size-row:hover{ transform:none; border-color:var(--wine); }
+  .size-row[aria-pressed="true"]{ border-color:var(--wine); background:var(--bg-soft); }
+  .size-row-price{ font-weight:700; color:var(--wine); }
+  .coupon-input,.delivery-field select,.delivery-field input{ background:#fff !important; border:1px solid var(--line) !important; border-radius:6px !important; }
+  .coupon-btn{ border-radius:6px; background:var(--wine); }
+  .topper-row,.addon-btn{ border-radius:8px; background:#fff; }
+  .topper-row[aria-pressed="true"],.addon-btn[aria-pressed="true"]{ background:var(--bg-soft); border-color:var(--wine); }
+  .send-order-btn{ background:var(--wine); border-radius:6px; box-shadow:none; padding:18px; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; transition:background .15s; }
+  .send-order-btn:hover:not(:disabled){ background:var(--pink-deeper); transform:none; }
+  .send-order-btn:disabled{ background:var(--bg-soft); color:#A99DA0; }
+  .coupon-msg.success{ color:#3F6B4B; }
+
+  .gallery-grid{ gap:10px; }
+  .gallery-grid img{ border-radius:6px; border:0; box-shadow:none; transition:opacity .2s; }
+  .gallery-grid img:hover{ transform:none; opacity:.88; }
+
+  /* DOCINHOS */
+  .doces-hero{ text-align:center; margin-bottom:44px; }
+  .eyebrow{ background:none; padding:0; border-radius:0; color:var(--pink-deep); font-size:.68rem; letter-spacing:.22em; margin-bottom:14px; }
+  .doces-hero .gallery-title{ font-size:2.3rem; }
+  .doces-perks{ margin-top:22px; gap:0; }
+  .doces-perks span{ background:none; border:0; border-radius:0; padding:0 18px; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--wine-soft); }
+  .doces-perks span+span{ border-left:1px solid var(--line); }
+  .doces-group{ background:none; border:0; border-radius:0; box-shadow:none; padding:0; margin-bottom:56px; }
+  .doces-group-head{ align-items:baseline; border-bottom:1px solid var(--wine); padding-bottom:14px; margin-bottom:0; }
+  .doces-group-title{ font-weight:500; font-size:1.5rem; }
+  .peso-chip,.peso-chip.gold{ background:none; color:var(--wine-soft); padding:0; font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+  .doces-grid{ grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:0; border-left:1px solid var(--line); }
+  .doce-card{ background:#fff; border:0; border-right:1px solid var(--line); border-bottom:1px solid var(--line); border-radius:0; padding:28px 22px 24px; gap:14px; text-align:left; transition:background .2s; }
+  .doce-card:hover{ transform:none; box-shadow:none; background:var(--bg-soft); }
+  .doce-art{ width:64px; height:64px; margin:0; filter:none; }
+  .doce-card:hover .doce-art{ transform:none; }
+  .doce-card-name{ font-weight:500; font-size:1.08rem; justify-content:flex-start; min-height:2.6em; }
+  .doce-card-price{ font-weight:700; font-size:1.05rem; color:var(--wine); }
+  .doce-card-price small{ display:inline; margin-left:6px; font-weight:500; }
+  .stepper{ justify-content:flex-start; gap:0; border:1px solid var(--line); border-radius:6px; width:fit-content; background:#fff; }
+  .stepper button{ border:0; border-radius:0; width:36px; height:36px; background:none; }
+  .stepper output{ min-width:84px; text-align:center; font-weight:600; border-left:1px solid var(--line); border-right:1px solid var(--line); line-height:36px; }
+  .doce-total{ margin:0; }
+  .doce-card-btn{ background:var(--wine); border-radius:6px; box-shadow:none; padding:13px; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; }
+  .doce-card-btn:hover{ transform:none; background:var(--pink-deeper); }
+
+  footer{ border-top:1px solid var(--line); margin-top:56px; padding:40px 0 56px; }
+  footer .fdiv{ display:none; }
+  footer p{ font-style:normal; font-weight:500; }
+
+  @media (max-width:640px){
+    .hero{ padding:40px 0 30px; }
+    .hero-badges span,.doces-perks span{ padding:4px 12px; }
+    .view-toggle-btn{ padding:16px 22px; }
+    .tab{ padding:12px 14px; }
+    .doces-grid{ grid-template-columns:1fr 1fr; }
+    .doce-card{ padding:20px 14px; }
+    .doce-art{ width:52px; height:52px; }
+    .stepper output{ min-width:60px; font-size:.78rem; }
+  }
+  @media (max-width:420px){ .doces-grid{ grid-template-columns:1fr; } }
+
 </style>
 </head>
 <body>
@@ -707,11 +814,12 @@
   </svg>
   <h1>Bolos artesanais<br>com <em>sabor e carinho</em><br>em cada fatia</h1>
   <p>Massas macias, recheios cremosos e combinações pensadas para transformar qualquer ocasião. Escolha a categoria, o sabor e o tamanho — o pedido segue direto para o nosso WhatsApp.</p>
+  <div class="hero-badges"><span>Feito à mão</span><span>Frutas frescas</span><span>Entrega na região</span></div>
 </section>
 
 <div class="view-toggle wrap" id="view-toggle" role="tablist" aria-label="Escolher entre Bolos e Docinhos">
-  <button class="view-toggle-btn" data-view="bolos" type="button">🎂 Bolos</button>
-  <button class="view-toggle-btn" data-view="docinhos" type="button">🍬 Docinhos</button>
+  <button class="view-toggle-btn" data-view="bolos" type="button">Bolos</button>
+  <button class="view-toggle-btn" data-view="docinhos" type="button">Docinhos</button>
 </div>
 
 <div class="divider view-bolos" id="view-bolos-divider1">
@@ -763,7 +871,7 @@
 <main class="wrap view-bolos" id="view-bolos-main">
   <div class="tabs" role="tablist" aria-label="Categorias de bolo" id="tabs"></div>
   <p class="tab-hint">Escolha a categoria e o sabor · se tiver cupom, aplique · depois é só escolher o tamanho para enviar o pedido pelo WhatsApp</p>
-  <p class="tab-hint">🎂 Bolos de andar: <a href="https://wa.me/5511999220215" target="_blank" rel="noopener" style="color:var(--pink-deeper); font-weight:700;">fale diretamente pelo WhatsApp</a> para orçamento e detalhes.</p>
+  <p class="tab-hint">Bolos de andar: <a href="https://wa.me/5511999220215" target="_blank" rel="noopener" style="color:var(--pink-deeper); font-weight:700;">fale diretamente pelo WhatsApp</a> para orçamento e detalhes.</p>
 
   <section class="panel" id="panel"></section>
 
@@ -777,18 +885,33 @@
 </div>
 
 <section class="doces-section wrap view-docinhos" id="view-docinhos-section">
-  <p class="gallery-title">Docinhos</p>
-  <p class="gallery-sub">Vendidos por cento, prontos para festas e ocasiões especiais.</p>
+  <div class="doces-hero">
+    <span class="eyebrow">Para festas &amp; encomendas</span>
+    <p class="gallery-title">Docinhos artesanais</p>
+    <p class="gallery-sub">Enrolados à mão, vendidos por cento e prontos para a sua comemoração.</p>
+    <div class="doces-perks"><span>Chocolate de qualidade</span><span>Podem ser decorados</span><span>Pedido mínimo: 1 cento</span></div>
+    <div class="coupon-box" id="doc-coupon-box"></div>
+  </div>
 
   <div class="doces-group">
-    <p class="doces-group-title">Docinhos 12/13g</p>
-    <p class="doces-group-sub">Com cacau 50% e granulado, cobertura de leite Ninho ou coco integral.</p>
+    <div class="doces-group-head">
+      <div>
+        <p class="doces-group-title">Tradicionais</p>
+        <p class="doces-group-sub">Com cacau 50% e granulado, cobertura de leite Ninho ou coco integral.</p>
+      </div>
+      <span class="peso-chip">12/13 g</span>
+    </div>
     <div class="doces-grid" id="doces-tradicionais"></div>
   </div>
 
   <div class="doces-group">
-    <p class="doces-group-title">Gourmet 17/18g</p>
-    <p class="doces-group-sub">Docinhos gourmet podem ser decorados.</p>
+    <div class="doces-group-head">
+      <div>
+        <p class="doces-group-title">Gourmet</p>
+        <p class="doces-group-sub">Sabores sofisticados, maiores e com acabamento especial. Podem ser decorados.</p>
+      </div>
+      <span class="peso-chip gold">17/18 g</span>
+    </div>
     <div class="doces-grid" id="doces-gourmet"></div>
   </div>
 </section>
@@ -806,7 +929,7 @@
     </svg>
   </div>
   <p>Pri Doce&amp;ria — sabor e carinho em cada mordida.</p>
-  <p style="margin-top:10px;"><a href="https://www.instagram.com/pridoce_ria?igsi=MXZpZnRlNmZiZW52bw==" target="_blank" rel="noopener" style="color:var(--pink-deeper); font-weight:700; text-decoration:none;">📷 @pridoce_ria no Instagram</a></p>
+  <p style="margin-top:10px;"><a href="https://www.instagram.com/pridoce_ria?igsi=MXZpZnRlNmZiZW52bw==" target="_blank" rel="noopener" style="color:var(--pink-deeper); font-weight:700; text-decoration:none;">@pridoce_ria no Instagram</a></p>
 </footer>
 
 <script>
@@ -847,7 +970,7 @@
         { label: 'Redondo 25 cm', rend: '22 fatias', price: 203 },
         { label: 'Retangular 20×30 cm', rend: '24 fatias', price: 203 },
         { label: 'Retangular 25×37 cm', rend: '48 fatias', price: 269 },
-        { label: 'Retangular 30×45 cm', rend: '60 fatias', price: 370 }
+        { label: 'Retangular 30×45 cm', rend: '60 fatias', price: 443 }
       ]
     },
     especial: {
@@ -867,7 +990,7 @@
         { label: 'Redondo 25 cm', rend: '22 fatias', price: 223.30 },
         { label: 'Retangular 20×30 cm', rend: '24 fatias', price: 223.30 },
         { label: 'Retangular 25×37 cm', rend: '48 fatias', price: 295.90 },
-        { label: 'Retangular 30×45 cm', rend: '60 fatias', price: 400 }
+        { label: 'Retangular 30×45 cm', rend: '60 fatias', price: 488 }
       ]
     },
     premium: {
@@ -931,6 +1054,52 @@
     return 'R$ ' + v.toFixed(2).replace('.', ',');
   }
 
+  // Cupom único: vale para bolos e docinhos
+  function applyCoupon(value){
+    state.couponInput = value;
+    const normalized = state.couponInput.trim().toUpperCase().replace('%', '');
+    if(normalized === COUPON_CODE){
+      state.couponApplied = true;
+      state.couponMessage = `Cupom aplicado! ${COUPON_DISCOUNT * 100}% de desconto no valor.`;
+    } else {
+      state.couponMessage = 'Cupom inválido. Confira o código e tente novamente.';
+    }
+    renderPanel();
+    renderDocinhos();
+    renderDocCoupon();
+  }
+
+  function docPrice(preco){
+    return state.couponApplied ? preco * (1 - COUPON_DISCOUNT) : preco;
+  }
+
+  function docPriceHtml(preco){
+    return state.couponApplied
+      ? `<span class="size-row-price-old">${formatPrice(preco)}</span>${formatPrice(docPrice(preco))}`
+      : formatPrice(preco);
+  }
+
+  function renderDocCoupon(){
+    const box = document.getElementById('doc-coupon-box');
+    if(!box) return;
+    box.innerHTML = `
+      <p class="section-label">Cupom de desconto</p>
+      <div class="coupon-form">
+        <input type="text" class="coupon-input" id="doc-coupon-input" placeholder="Digite o cupom" value="${state.couponInput}" maxlength="20" ${state.couponApplied ? 'disabled' : ''}>
+        <button class="coupon-btn" id="doc-coupon-btn" ${state.couponApplied ? 'disabled' : ''}>${state.couponApplied ? 'Aplicado' : 'Aplicar'}</button>
+      </div>
+      ${state.couponMessage ? `<p class="coupon-msg ${state.couponApplied ? 'success' : 'error'}">${state.couponMessage}</p>` : ''}
+    `;
+    if(!state.couponApplied){
+      const input = document.getElementById('doc-coupon-input');
+      const btn = document.getElementById('doc-coupon-btn');
+      btn.addEventListener('click', () => applyCoupon(input.value));
+      input.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter'){ e.preventDefault(); applyCoupon(input.value); }
+      });
+    }
+  }
+
   function renderTabs(){
     tabsEl.innerHTML = Object.keys(DATA).map(key => {
       const active = state.category === key;
@@ -988,7 +1157,7 @@
         <p class="section-label">Cupom de desconto</p>
         <div class="coupon-form">
           <input type="text" class="coupon-input" id="coupon-input" placeholder="Digite o cupom" value="${state.couponInput}" maxlength="20" ${state.couponApplied ? 'disabled' : ''}>
-          <button class="coupon-btn" id="coupon-btn" ${state.couponApplied ? 'disabled' : ''}>${state.couponApplied ? 'Aplicado ✓' : 'Aplicar'}</button>
+          <button class="coupon-btn" id="coupon-btn" ${state.couponApplied ? 'disabled' : ''}>${state.couponApplied ? 'Aplicado' : 'Aplicar'}</button>
         </div>
         ${state.couponMessage ? `<p class="coupon-msg ${state.couponApplied ? 'success' : 'error'}">${state.couponMessage}</p>` : ''}
       </div>
@@ -1011,7 +1180,7 @@
               </span>
               <span style="text-align:right;">
                 ${priceHtml}<br>
-                <span class="size-row-cta">${state.sizeIndex === i ? 'Selecionado ✓' : 'Selecionar'}</span>
+                <span class="size-row-cta">${state.sizeIndex === i ? 'Selecionado ' : 'Selecionar'}</span>
               </span>
             </button>
           `;
@@ -1059,10 +1228,10 @@
           <span class="topper-price">+ ${formatPrice(TOPPER_PRICE)}</span>
         </button>
 
-        <p class="decor-note">🎨 Detalhes de decoração: combinar diretamente no WhatsApp.</p>
-        <p class="fruit-note ${fruta ? 'show' : ''}">🍓 Atenção! Vou verificar se temos essa fruta, pois trabalhamos somente com frutas frescas.</p>
+        <p class="decor-note">Detalhes de decoração: combinar diretamente no WhatsApp.</p>
+        <p class="fruit-note ${fruta ? 'show' : ''}">Atenção! Vou verificar se temos essa fruta, pois trabalhamos somente com frutas frescas.</p>
 
-        <button type="button" class="send-order-btn" id="send-order-btn" ${state.sizeIndex === null ? 'disabled' : ''}>Enviar pedido no WhatsApp →</button>
+        <button type="button" class="send-order-btn" id="send-order-btn" ${state.sizeIndex === null ? 'disabled' : ''}>Enviar pedido no WhatsApp</button>
         <p class="send-order-hint ${state.sendHint ? 'show' : ''}">${state.sendHint}</p>
       </div>
     `;
@@ -1092,17 +1261,7 @@
     const couponInput = document.getElementById('coupon-input');
     const couponBtn = document.getElementById('coupon-btn');
     if(couponBtn && !state.couponApplied){
-      const tryApply = () => {
-        state.couponInput = couponInput.value;
-        const normalized = state.couponInput.trim().toUpperCase().replace('%', '');
-        if(normalized === COUPON_CODE){
-          state.couponApplied = true;
-          state.couponMessage = `Cupom aplicado! ${COUPON_DISCOUNT * 100}% de desconto no valor. 🎉`;
-        } else {
-          state.couponMessage = 'Cupom inválido. Confira o código e tente novamente.';
-        }
-        renderPanel();
-      };
+      const tryApply = () => applyCoupon(couponInput.value);
       couponBtn.addEventListener('click', tryApply);
       couponInput.addEventListener('keydown', (e) => {
         if(e.key === 'Enter'){
@@ -1233,10 +1392,10 @@
   }
 
   const DOCINHOS_TRADICIONAIS = [
-    { nome: 'Brigadeiro', preco: 130.5 },
-    { nome: 'Beijinho', preco: 130.5 },
+    { nome: 'Brigadeiro', preco: 150 },
+    { nome: 'Beijinho', preco: 150 },
     { nome: 'Bicho de pé', preco: 181.25 },
-    { nome: 'Ninho', preco: 130.5 }
+    { nome: 'Ninho', preco: 150 }
   ];
 
   const DOCINHOS_GOURMET = [
@@ -1248,31 +1407,64 @@
     { nome: 'Ninho com uva', preco: 217.5 }
   ];
 
-  function pedirDocinho(nome, preco){
-    const text = `Olá! Gostaria de fazer um pedido na Pri Doce&ria\n\nDocinho: ${nome}\nValor: ${formatPrice(preco)} o cento\n\nAguardo confirmação, obrigado(a)!`;
+  function sweetArt(nome){
+    const n = nome.toLowerCase();
+    let c='#4A2A1C', d='#C9A24B';
+    if(n.includes('meio amargo')){ c='#2F1A11'; d='#8A6A3A'; }
+    else if(n.includes('cacau 70')){ c='#3B2216'; d='#C9A24B'; }
+    else if(n.includes('beijinho')){ c='#F3E7D3'; d='#FFFFFF'; }
+    else if(n.includes('bicho')){ c='#D9708A'; d='#FFFFFF'; }
+    else if(n.includes('nutella')){ c='#7A4B2E'; d='#E9D2A5'; }
+    else if(n.includes('uva')){ c='#EADFC4'; d='#7B4FA8'; }
+    else if(n.includes('ninho')){ c='#EFE3C6'; d='#FFFFFF'; }
+    const half = n.includes('dois amores') ? '<path d="M32 30a22 22 0 0 0 0 44z" fill="#4A2A1C"/>' : '';
+    const dots=[[24,22],[34,17],[40,26],[26,32],[36,34]].map(p=>`<circle cx="${p[0]+8}" cy="${p[1]+8}" r="1.5" fill="${d}"/>`).join('');
+    return `<svg class="doce-art" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <path d="M12 40h40l-4 16H16z" fill="#fff" stroke="#BFB2A6" stroke-width="1.2" stroke-linejoin="round"/>
+      <circle cx="32" cy="30" r="19" fill="${c}"/>${n.includes('dois amores')?'<path d="M32 11a19 19 0 0 0 0 38z" fill="#4A2A1C"/>':''}${dots}
+    </svg>`;
+  }
+
+  function pedirDocinho(nome, preco, qtd){
+    qtd = qtd || 1;
+    const unit = docPrice(preco);
+    const cupomLinhas = state.couponApplied
+      ? `Valor original: ${formatPrice(preco)} o cento\nCupom: ${COUPON_CODE} (-${COUPON_DISCOUNT * 100}%)\nValor unitário com desconto: ${formatPrice(unit)} o cento\n`
+      : `Valor unitário: ${formatPrice(preco)} o cento\n`;
+    const text = `Olá! Gostaria de fazer um pedido na Pri Doce&ria\n\nDocinho: ${nome}\nQuantidade: ${qtd} ${qtd>1?'centos':'cento'}\n${cupomLinhas}Valor total: ${formatPrice(unit*qtd)}\n\nAguardo confirmação, obrigado(a)!`;
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   }
   window.pedirDocinho = pedirDocinho;
 
+  const docQty = {};
+
   function renderDocinhos(){
     const renderGrid = (elId, lista) => {
       const el = document.getElementById(elId);
       el.innerHTML = lista.map((d, i) => `
-        <div class="doce-card">
-          <div>
-            <div class="doce-card-name">${d.nome}</div>
-            <div class="doce-card-price">${formatPrice(d.preco)} o cento</div>
+        <article class="doce-card" data-idx="${i}">
+          ${sweetArt(d.nome)}
+          <div class="doce-card-name">${d.nome}</div>
+          <div class="doce-card-price">${docPriceHtml(d.preco)}<small>o cento</small></div>
+          <div class="stepper" role="group" aria-label="Quantidade de centos">
+            <button type="button" data-step="-1" aria-label="Diminuir">−</button>
+            <output>${(docQty[d.nome] || 1)} ${(docQty[d.nome] || 1) > 1 ? 'centos' : 'cento'}</output>
+            <button type="button" data-step="1" aria-label="Aumentar">+</button>
           </div>
-          <button class="doce-card-btn" data-el="${elId}" data-idx="${i}">Pedir</button>
-        </div>
+          <p class="doce-total">Total: <strong>${formatPrice(docPrice(d.preco) * (docQty[d.nome] || 1))}</strong></p>
+          <button class="doce-card-btn" type="button">Pedir no WhatsApp</button>
+        </article>
       `).join('');
-      el.querySelectorAll('.doce-card-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const lista2 = elId === 'doces-tradicionais' ? DOCINHOS_TRADICIONAIS : DOCINHOS_GOURMET;
-          const item = lista2[Number(btn.dataset.idx)];
-          pedirDocinho(item.nome, item.preco);
-        });
+      el.querySelectorAll('.doce-card').forEach(card => {
+        const item = lista[Number(card.dataset.idx)];
+        let q = docQty[item.nome] || 1;
+        const out = card.querySelector('output'), tot = card.querySelector('.doce-total strong');
+        const upd = () => { docQty[item.nome] = q; out.textContent = q + (q>1?' centos':' cento'); tot.textContent = formatPrice(docPrice(item.preco)*q); };
+        card.querySelectorAll('.stepper button').forEach(b => b.addEventListener('click', () => {
+          q = Math.min(20, Math.max(1, q + Number(b.dataset.step))); upd();
+        }));
+        card.querySelector('.doce-card-btn').addEventListener('click', () => pedirDocinho(item.nome, item.preco, q));
       });
     };
     renderGrid('doces-tradicionais', DOCINHOS_TRADICIONAIS);
@@ -1294,6 +1486,7 @@
 
   renderGallery();
   renderDocinhos();
+  renderDocCoupon();
   renderTabs();
   renderPanel();
 })();
